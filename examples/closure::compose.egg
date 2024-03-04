@@ -1,0 +1,6 @@
+let compose = lambda f, g: (
+        lambda x: f(g(x)) end
+    ) end,
+    incr = lambda x: x + 1 end
+in
+compose(incr, incr)(100)

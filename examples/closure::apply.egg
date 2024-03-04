@@ -1,0 +1,5 @@
+let apply = lambda f, x: f(x) end
+in
+let addone = lambda y: y + 1 end
+in
+apply(addone, 4)

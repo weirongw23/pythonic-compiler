@@ -1,0 +1,7 @@
+def trues(n):
+    if n <= 0:
+        []
+    else:
+        [true, trues(n - 1)]
+in
+trues(3)

@@ -1,0 +1,3 @@
+let foo = lambda x, y: x end
+in
+foo(1)

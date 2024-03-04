@@ -1,0 +1,36 @@
+def id(n):
+    n
+and
+def succ(n):
+    n + 1
+in
+def encode(n):
+    if n == 0:
+        id
+    else:
+        lambda x:
+            (encode(n - 1))(x)
+        end
+and
+def iota(n):
+    if n == 0:
+        0
+    else:
+        [n, iota(n - 1)]
+and
+def map(l, f):
+    if isarray(l):
+        map(l[1], f);
+        l[0] := f(l[0])
+    else:
+        print(false)
+and
+def fold(l, i, f):
+    if isarray(l):
+        fold(l[1], f(i, l[0]), f)
+    else:
+        i
+in
+let arr = iota(7) in
+map(arr, encode);
+print(fold(arr, id, (lambda f, g: (lambda x: g(f(x)) end) end)))(0)

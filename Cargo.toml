@@ -1,0 +1,15 @@
+[package]
+name = "snake"
+version = "0.4.0"
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tempfile = "3"
+lalrpop-util = { version = "0.19.6", features = [ "lexer" ] }
+regex = "1"
+
+# Add a build-time dependency on the lalrpop library:
+[build-dependencies]
+lalrpop = "0.19.6"

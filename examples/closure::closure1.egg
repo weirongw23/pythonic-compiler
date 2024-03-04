@@ -1,0 +1,5 @@
+let a = 1
+in
+let foo = lambda c, d: (a + c) - d end
+in
+foo(25, 6)

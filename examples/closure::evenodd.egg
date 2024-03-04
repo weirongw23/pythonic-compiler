@@ -1,0 +1,16 @@
+let is_even = (
+    def is_even(x):
+        def is_odd(x):
+            if x == 0:
+                false
+            else:
+                is_even(x - 1)
+        in
+        if x == 0:
+            true
+        else:
+            is_odd(x - 1)
+    in
+    is_even
+) in
+is_even(2)

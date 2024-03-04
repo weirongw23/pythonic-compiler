@@ -1,0 +1,7 @@
+def f(x, y):
+    x + y
+and
+def f(a, b):
+    a * b
+in
+f(1, 2)

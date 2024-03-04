@@ -1,0 +1,2 @@
+let f = lambda x, y: x + y end in
+f(10, 20)

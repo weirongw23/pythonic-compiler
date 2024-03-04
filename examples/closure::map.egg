@@ -1,0 +1,3 @@
+let map = lambda f, t: [f(t[0]), f(t[1])] end in
+let addone = lambda y: y + 1 end in
+map(addone, [1, 2])

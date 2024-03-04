@@ -1,0 +1,12 @@
+def g():
+	true
+in
+let f = (
+    if g():
+        let seven = 7 in
+        lambda x: x + seven end
+    else:
+        lambda y: y + 1 end
+)
+in
+f(5)

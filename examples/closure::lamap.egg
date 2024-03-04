@@ -1,0 +1,2 @@
+let a = 1 in
+(lambda x: x + 1 end)(a)

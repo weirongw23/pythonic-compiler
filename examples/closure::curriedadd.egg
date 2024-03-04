@@ -1,0 +1,2 @@
+let add = lambda n: (lambda x: x + n end) end in
+(add(3))(4)

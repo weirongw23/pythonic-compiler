@@ -1,0 +1,29 @@
+let a = 1
+in
+let b = 2
+in
+let c = 3
+in
+let d = 4
+in
+let e = 5
+in
+let f = 6
+in
+let g = 7
+in
+let h = 8
+in
+let i = 9
+in
+let j = 10
+in
+let k = 11
+in
+let l = 12
+in
+let m = 13
+in
+let foo = lambda c, d: c + d + i end
+in
+foo(25, 1)

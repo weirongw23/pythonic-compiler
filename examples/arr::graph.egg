@@ -1,0 +1,3 @@
+let shared = [true, false] in
+let graph = [shared[1] := true, shared] in
+graph

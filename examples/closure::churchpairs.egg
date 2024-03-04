@@ -1,0 +1,20 @@
+let pair = 
+    lambda x, y: (
+        lambda b: (
+            if b:
+                x
+            else:
+                y
+        ) end
+    ) end
+in
+def sum(list):
+    if list == false:
+        0
+    else:
+        list(true) + sum(list(true))
+in
+let p = pair(1, pair(2, false))
+in
+sum(p)
+

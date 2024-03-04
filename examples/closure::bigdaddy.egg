@@ -1,0 +1,61 @@
+def Z(f):
+    let g = (
+        lambda x: (
+            lambda v: (
+                f(x(x), v)
+            ) end
+        ) end
+    ) in
+    g(g)
+in
+let fact = (lambda fact, n:
+    if n == 0:
+        1
+    else:
+        n * fact(n - 1)
+end)
+in
+let fact = Z(fact)
+in
+print(fact(5));
+def unit(x):
+    x
+in
+def zero(f, x):
+    x
+in
+def succ(f, x):
+    f(x)
+in
+def add(m, n):
+    lambda f, x:
+        m(f, n(f, x))
+    end
+in
+def mul(m, n):
+    lambda f, x:
+        m(lambda x: n(f, x) end, x)
+    end
+in
+def sqr(m):
+    m * m
+in
+def iszero(m):
+    m(lambda x: false end, true)
+in
+let two = lambda f, x: 
+    succ(f, succ(f, zero(f, x)))
+end
+in
+let three = lambda f, x:
+    succ(f, succ(f, succ(f, zero(f, x))))
+end
+in
+let f = lambda x: x + 1 end in
+let x = 0 in
+print(add(three, two)(f, x));
+print(mul(three, two)(f, x));
+print(sqr(mul(three, two)(f, x)));
+print(iszero(zero));
+print(iszero(two));
+42

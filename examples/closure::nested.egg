@@ -1,0 +1,6 @@
+let double_and_square = (
+    let foo = lambda x: x + x end in
+    lambda x: foo(x) * foo(x) end
+)
+in
+double_and_square(3)

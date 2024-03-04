@@ -1,0 +1,6 @@
+let three = [0, 0, 0] in
+((three[0] := 1)[1]  := 2)[2] := 3;
+let pair = [0, 0] in
+pair[0] := (three[1] := 10);
+print(three);
+pair

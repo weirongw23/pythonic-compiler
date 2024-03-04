@@ -1,0 +1,5 @@
+let v = [[5, true, false, 6], [20], [13, false]] in
+if v[0][1]:
+    v[0][3]
+else:
+    v[1][0]

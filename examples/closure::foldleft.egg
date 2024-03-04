@@ -1,0 +1,20 @@
+let emp = false in
+let cons = lambda h, t: [h, t] end in
+let head = lambda l: l[0] end in
+let tail = lambda l: l[1] end in
+let isEmp = lambda l: l == emp end in
+def range(i, j):
+    if i < j:
+        cons(i, range(i + 1, j))
+    else:
+        emp
+in
+def foldl(f, acc, xs):
+    if isEmp(xs):
+        acc
+    else:
+        foldl(f, f(acc, head(xs)), tail(xs))
+in
+let fac = lambda n: foldl(lambda x, y: x * y end, 1, range(1, n + 1)) end
+in
+[fac(3), fac(4), fac(5)]

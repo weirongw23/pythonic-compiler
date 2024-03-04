@@ -1,0 +1,5 @@
+let a = 1, b = 2 in
+def f(x, x):
+    2 * x
+in
+f(a, b)

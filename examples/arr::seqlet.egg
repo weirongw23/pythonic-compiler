@@ -1,0 +1,6 @@
+let x = print(4),
+    y = print(30)
+in
+print(false);
+print(true);
+3

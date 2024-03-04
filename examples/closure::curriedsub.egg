@@ -1,0 +1,3 @@
+let sub = lambda n: (lambda x: x - n end) end in
+let subthree = sub(3) in
+subthree(4)

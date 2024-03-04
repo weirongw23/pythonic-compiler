@@ -1,0 +1,5 @@
+let foo = lambda : (
+    lambda x: 8 end
+) end
+in
+(foo())(1)

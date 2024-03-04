@@ -1,0 +1,14 @@
+def popcount(bits):
+    if bits == 0:
+        0
+    else:
+        if bits[0]:
+            1 + popcount(bits[1])
+        else:
+            popcount(bits[1])
+in
+print(popcount(0));
+print(popcount([false, 0]));
+print(popcount([true, 0]));
+print(popcount([false, [true, [true, [false, 0]]]]));
+popcount([true, [false, [true, [true, [false, 0]]]]])

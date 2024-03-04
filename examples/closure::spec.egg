@@ -1,0 +1,6 @@
+def f(x,y): x + y in
+			let arr = [f] in
+					 let r   = f(0,1) in
+	let g   = arr[0] in
+			   g(r, 2)
+
